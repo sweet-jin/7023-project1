@@ -1,0 +1,63 @@
+# TADH-MiC default configuration (all geometry in meters)
+
+seed: 42
+
+data:
+  n_train: 80
+  n_val: 16
+  n_points: 12000
+  noise_sigma: 0.001        # sensor noise (m)
+  dropout: 0.0              # random point dropout fraction
+  max_range: null           # single-station range cutoff (m); null = off
+  waviness_amp: [0.0, 0.0015]   # surface waviness amplitude range (m)
+  waviness_freq: [2.0, 5.0]     # waviness frequency (cycles per face)
+  tilt_deg: [0.0, 0.3]          # wall tilt range (deg) -> perpendicularity GT
+  room:
+    L: [2.5, 4.5]
+    W: [2.0, 4.0]
+    H: [2.6, 3.0]
+  door:
+    w: [0.7, 1.0]
+    h: [2.0, 2.2]
+  window:
+    w: [0.8, 1.5]
+    h: [1.0, 1.6]
+  hole:
+    r: [0.03, 0.12]         # through-hole radius range (m)
+  embedded:
+    w: [0.2, 0.5]
+    h: [0.2, 0.5]
+    prot: [0.02, 0.08]
+
+model:
+  backbone:
+    feat_dim: 128
+  router:
+    n_tasks: 6
+    emb_dim: 64
+    hidden: 128
+  seg_head:
+    hidden: 128
+  measure_head:
+    hidden: 128
+  use_vision_prior: false
+
+train:
+  epochs: 40
+  warmup_epochs: 5          # train seg+router first, then joint with measure head
+  lr: 0.001
+  weight_decay: 0.0001
+  loss_weights: {seg: 1.0, task: 0.5, meas: 1.0}
+  save_every: 5
+  log_every: 5
+
+tolerances:                 # pass/fail thresholds (m); example values, align to CI3LAB data
+  length: 0.005
+  width: 0.005
+  height: 0.005
+  flatness_max: 0.003
+  perpendicularity_deg: 3.0
+  door: 0.005
+  window: 0.005
+  hole: 0.005
+  embedded: 0.005

@@ -1,0 +1,59 @@
+{
+  "mode": "learned",
+  "measure": {
+    "module": {
+      "n": 12,
+      "mae_mm": 965.0937456652828,
+      "rmse_mm": 1241.71528521035
+    },
+    "door": {
+      "n": 10,
+      "mae_mm": 172.10726447790972,
+      "rmse_mm": 211.25388183688733
+    },
+    "window": {
+      "n": 8,
+      "mae_mm": 143.2743414984436,
+      "rmse_mm": 178.64892606968866
+    },
+    "hole": {
+      "n": 10,
+      "mae_mm": 85.2732584967685,
+      "rmse_mm": 103.82673078786593
+    },
+    "embedded": {
+      "n": 11,
+      "mae_mm": 64.85304390184078,
+      "rmse_mm": 93.15177982970297
+    }
+  },
+  "seg_acc": 0.7497308651606241,
+  "task_acc": 0.08333333333333333,
+  "pass_rate": {
+    "module": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 965.0937456652828,
+      "mae_within_tol": false
+    },
+    "door": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 172.10726447790972,
+      "mae_within_tol": false
+    },
+    "window": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 143.2743414984436,
+      "mae_within_tol": false
+    },
+    "hole": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 85.2732584967685,
+      "mae_within_tol": false
+    },
+    "embedded": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 64.85304390184078,
+      "mae_within_tol": false
+    }
+  }
+}

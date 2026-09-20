@@ -1,0 +1,7 @@
+numpy>=1.24
+torch>=2.1
+PyYAML>=6.0
+# 可选（2D 基础模型先验分支 / 可视化）
+# segment-anything
+# matplotlib
+# open3d

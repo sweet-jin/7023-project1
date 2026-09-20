@@ -1,0 +1,57 @@
+{
+  "mode": "geom-pred",
+  "measure": {
+    "module": {
+      "n": 12,
+      "mae_mm": 297.41235951865644,
+      "rmse_mm": 657.2530218912776
+    },
+    "door": {
+      "n": 9,
+      "mae_mm": 1517.9566646303078,
+      "rmse_mm": 1636.3165652161551
+    },
+    "window": {
+      "n": 1,
+      "mae_mm": 319.4676170435491,
+      "rmse_mm": 354.42469664314723
+    },
+    "hole": {
+      "n": 10,
+      "mae_mm": 19.428478282902113,
+      "rmse_mm": 29.59309850045712
+    },
+    "embedded": {
+      "n": 7,
+      "mae_mm": 275.18739000882607,
+      "rmse_mm": 362.43421798892564
+    }
+  },
+  "pass_rate": {
+    "module": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 297.41235951865644,
+      "mae_within_tol": false
+    },
+    "door": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 1517.9566646303078,
+      "mae_within_tol": false
+    },
+    "window": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 319.4676170435491,
+      "mae_within_tol": false
+    },
+    "hole": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 19.428478282902113,
+      "mae_within_tol": false
+    },
+    "embedded": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 275.18739000882607,
+      "mae_within_tol": false
+    }
+  }
+}

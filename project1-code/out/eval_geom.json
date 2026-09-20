@@ -1,0 +1,57 @@
+{
+  "mode": "geom",
+  "measure": {
+    "module": {
+      "n": 16,
+      "mae_mm": 9.372017467369567,
+      "rmse_mm": 11.231023007969554
+    },
+    "door": {
+      "n": 13,
+      "mae_mm": 9.641196301543975,
+      "rmse_mm": 13.189774980518148
+    },
+    "window": {
+      "n": 11,
+      "mae_mm": 6.309559253086805,
+      "rmse_mm": 8.721781270199134
+    },
+    "hole": {
+      "n": 13,
+      "mae_mm": 2.2204370258283044,
+      "rmse_mm": 5.632288671915701
+    },
+    "embedded": {
+      "n": 14,
+      "mae_mm": 3.517990433951205,
+      "rmse_mm": 3.7064568971328478
+    }
+  },
+  "pass_rate": {
+    "module": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 9.372017467369567,
+      "mae_within_tol": false
+    },
+    "door": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 9.641196301543975,
+      "mae_within_tol": false
+    },
+    "window": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 6.309559253086805,
+      "mae_within_tol": false
+    },
+    "hole": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 2.2204370258283044,
+      "mae_within_tol": true
+    },
+    "embedded": {
+      "tolerance_mm": 5.0,
+      "mae_mm": 3.517990433951205,
+      "mae_within_tol": true
+    }
+  }
+}
